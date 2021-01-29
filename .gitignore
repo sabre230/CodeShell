@@ -1,2 +1,5 @@
 # Ignore stock icons
 Resources\CustomIcons\Stock
+
+# Ignore install logs
+install_log.txt
