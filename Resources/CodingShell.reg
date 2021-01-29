@@ -133,7 +133,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\batch.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\bat\command]
-@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\bat.bat\""
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\batch.bat\""
 
 
 ; PS1 - New PowerShell Script
