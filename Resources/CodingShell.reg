@@ -1,0 +1,141 @@
+Windows Registry Editor Version 5.00
+
+; Make a container/key with the name "Coding" that is opened in right-click menu when in a folder (?)
+[HKEY_CLASSES_ROOT\Directory\Background\shell\Coding]
+"Icon"="C:\\Windows\\CustomIcons\\RemoteTools.ico"
+"MUIVerb"="Coding"
+; These are all the "commands" we want to have in our container/key
+"SubCommands"="cmd;powershell;linuxterminal;css;html;xml;js;java;cs;cpp;php;py;bat;ps1"
+"Position"="Top"
+"SeparatorAfter"=""
+
+
+; CMD - Command
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cmd]
+@="Open a CMD window here"
+"Icon"="cmd.exe,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cmd\command]
+@="cmd.exe"
+
+
+; POWERSHELL - Command
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\powershell]
+@="Open a PowerShell window here"
+"Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe,0"
+"CommandFlags"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\powershell\command]
+@="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+
+; LINUX TERMINAL - Command
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\linuxterminal]
+@="Open a Linux Terminal here"
+; "Icon"="C:\\Windows\\System32\\wsl.exe,0"
+"Icon"="C:\\Windows\\CustomIcons\\terminal.ico,0"
+"CommandFlags"=dword:00000040
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\linuxterminal\command]
+@="wsl.exe --cd \"%V\""
+
+
+
+
+; CSS - New CSS file
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\css]
+@="CSS Document"
+"Icon"="C:\\Windows\\CustomIcons\\css.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\css\command]
+@="C:\\Windows\\CustomCommands\\css.bat"
+
+
+; HTML - New HTML file
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\html]
+@="HTML Document"
+"Icon"="C:\\Windows\\CustomIcons\\html.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\html\command]
+@="C:\\Windows\\CustomCommands\\html.bat"
+
+
+; XML - New XML file
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\xml]
+@="XML Document"
+"Icon"="C:\\Windows\\CustomIcons\\xml.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\xml\command]
+@="C:\\Windows\\CustomCommands\\xml.bat"
+
+
+; JS - New JavaScript file
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\js]
+@="JavaScript Document"
+"Icon"="C:\\Windows\\CustomIcons\\javascript.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\js\command]
+@="C:\\Windows\\CustomCommands\\js.bat"
+
+
+;C++
+; C++ - New C++ file
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cpp]
+@="CPP Document"
+"Icon"="C:\\Windows\\CustomIcons\\cpp.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cpp\command]
+@="C:\\Windows\\CustomCommands\\cpp.bat"
+
+
+; JAVA - New Java file
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\java]
+@="Java Document"
+"Icon"="C:\\Windows\\CustomIcons\\java.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\java\command]
+@="C:\\Windows\\CustomCommands\\java.bat"
+
+
+; CS - New C# file
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cs]
+@="C# Script"
+"Icon"="C:\\Windows\\CustomIcons\\csharp.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cs\command]
+@="C:\\Windows\\CustomCommands\\cs.bat"
+
+
+; PHP - New PHP Document
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\php]
+@="PHP Document"
+"Icon"="C:\\Windows\\CustomIcons\\php.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\php\command]
+@="C:\\Windows\\CustomCommands\\php.bat"
+
+
+; PY - New Python Script
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\py]
+@="Python Script"
+"Icon"="C:\\Windows\\CustomIcons\\python.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\py\command]
+@="C:\\Windows\\CustomCommands\\py.bat"
+
+
+; BAT - New Batch Script
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\bat]
+@="Batch Script"
+"Icon"="C:\\Windows\\CustomIcons\\batch.ico,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\bat\command]
+@="C:\\Windows\\CustomCommands\\bat.bat"
+
+
+; PS1 - New PowerShell Script
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\ps1]
+@="PowerShell Script"
+"Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe,0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\ps1\command]
+@="C:\\Windows\\CustomCommands\\ps1.bat"
