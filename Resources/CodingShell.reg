@@ -1,5 +1,9 @@
 Windows Registry Editor Version 5.00
 
+; Written by Steve "sabre230" Rothlisberger
+; 1/27/2021
+; Free to use, no credit is necessary
+
 ; Make a container/key with the name "Coding" that is opened in right-click menu when in a folder (?)
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Coding]
 "Icon"="C:\\Windows\\CustomIcons\\RemoteTools.ico"
