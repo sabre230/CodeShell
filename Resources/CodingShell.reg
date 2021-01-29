@@ -51,7 +51,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\css.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\css\command]
-@="C:\\Windows\\CustomCommands\\css.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\css.bat\""
 
 
 ; HTML - New HTML file
@@ -60,7 +60,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\html.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\html\command]
-@="C:\\Windows\\CustomCommands\\html.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\html.bat\""
 
 
 ; XML - New XML file
@@ -69,7 +69,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\xml.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\xml\command]
-@="C:\\Windows\\CustomCommands\\xml.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\xml.bat\""
 
 
 ; JS - New JavaScript file
@@ -78,7 +78,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\javascript.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\js\command]
-@="C:\\Windows\\CustomCommands\\js.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\js.bat\""
 
 
 ;C++
@@ -88,7 +88,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\cpp.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cpp\command]
-@="C:\\Windows\\CustomCommands\\cpp.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\cpp.bat\""
 
 
 ; JAVA - New Java file
@@ -97,7 +97,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\java.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\java\command]
-@="C:\\Windows\\CustomCommands\\java.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\java.bat\""
 
 
 ; CS - New C# file
@@ -106,7 +106,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\csharp.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\cs\command]
-@="C:\\Windows\\CustomCommands\\cs.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\cs.bat\""
 
 
 ; PHP - New PHP Document
@@ -115,7 +115,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\php.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\php\command]
-@="C:\\Windows\\CustomCommands\\php.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\php.bat\""
 
 
 ; PY - New Python Script
@@ -124,7 +124,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\python.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\py\command]
-@="C:\\Windows\\CustomCommands\\py.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\py.bat\""
 
 
 ; BAT - New Batch Script
@@ -133,7 +133,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\batch.ico,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\bat\command]
-@="C:\\Windows\\CustomCommands\\bat.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\bat.bat\""
 
 
 ; PS1 - New PowerShell Script
@@ -142,4 +142,4 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe,0"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\ps1\command]
-@="C:\\Windows\\CustomCommands\\ps1.bat"
+@="wscript \"C:\\Windows\\CustomCommands\\i.vbs\" \"C:\\Windows\\CustomCommands\\ps1.bat\""

@@ -2,4 +2,4 @@
 
 COPY C:\Windows\CustomCommands\Templates\cpp.cpp "%cd%"
 
-RENAME cpp.cpp "New CPP Script.cs"
+RENAME cpp.cpp "New CPP Script.cpp"
