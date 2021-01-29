@@ -9,7 +9,7 @@ Windows Registry Editor Version 5.00
 "Icon"="C:\\Windows\\CustomIcons\\RemoteTools.ico"
 "MUIVerb"="Coding"
 ; These are all the "commands" we want to have in our container/key
-"SubCommands"="cmd;powershell;linuxterminal;css;html;xml;js;java;cs;cpp;php;py;bat;ps1"
+"SubCommands"="cmd;powershell;linuxterminal;label01;css;html;xml;js;java;cs;cpp;php;py;bat;ps1"
 "Position"="Top"
 "SeparatorAfter"=""
 
@@ -43,7 +43,11 @@ Windows Registry Editor Version 5.00
 @="wsl.exe --cd \"%V\""
 
 
-
+; Label - Title to objects below
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\label01]
+@="Create a new:"
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\css\command]
+-@=""
 
 ; CSS - New CSS file
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\css]
